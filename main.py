@@ -4,13 +4,13 @@ from wox import Wox
 
 class Main(Wox):
     def isPrime(self, number):
-        numberIsAPrime = False
-        for i in range(2, number):
+        if number % 2 == 0:
+            return False
+        # start at 3 and only check odd number up to sqrt(n)+1
+        for i in range(3, int(number**0.5)+1, 2):
             if number % i == 0:
-                break
-        else:   # confused? look up the python for-loop doc!
-            numberIsAPrime = True
-        return numberIsAPrime
+                return False
+        return True
 
     def getNumberValue(self, text):
         try:
@@ -42,7 +42,7 @@ class Main(Wox):
                 "Title": title,
                 "SubTitle": subTitle,
                 "IcoPath": "Images/{}.png".format(img),
-                "JsonRPCAction": { # actually no clue what this is, leaving it in for now..
+                "JsonRPCAction": {  # actually no clue what this is, leaving it in for now..
                     "dontHideAfterAction": True
                 }
             })
