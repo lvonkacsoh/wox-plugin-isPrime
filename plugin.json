@@ -4,7 +4,7 @@
     "Name": "isPrime",
     "Description": "Is the given number a prime?",
     "Author": "laszlord",
-    "Version": "1.0.0",
+    "Version": "1.0.1",
     "Language": "python",
     "Website": "http://www.wox.one/",
     "IcoPath": "Images\\icon.png",
