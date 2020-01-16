@@ -1,0 +1,12 @@
+{
+    "ID": "b9aaddfa-36a9-48f3-84b3-1b4fb6186861",
+    "ActionKeyword": "isPrime",
+    "Name": "isPrime",
+    "Description": "Is the given number a prime?",
+    "Author": "laszlord",
+    "Version": "1.0.0",
+    "Language": "python",
+    "Website": "http://www.wox.one/",
+    "IcoPath": "Images\\icon.png",
+    "ExecuteFileName": "main.py"
+}
